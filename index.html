@@ -1,1 +1,194 @@
-will edit later
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Farm Food for Nutritional Security</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #d3d3d3;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+    }
+
+    section {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: gray;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: #005daa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+    .first-column {
+      float: left;
+      width: 48%;
+      padding-right: 20px;
+    }
+
+    .column {
+      float: left;
+      width: 48%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Add map to top of page and make it stretch to fill browser window. -->
+  <img class="max-image-width" src="graphics/Map 1-Zoom Out.jpg">
+
+  <!-- Create a two column layout for map information. -->
+  <section>
+    <a href='graphics/Map 1-Zoom Out 8000px.jpg' class="linkbox">Full screen version</a>
+
+    <h1>The Opportunity of Symbiotic Relationships in Expanding Nutritional Security</h1>
+    <h2>By Robin Emmons</h2>
+
+    <div class="row">
+      
+      <!-- First column, the left half -->
+      <div >
+        <p>As the communications manager at a local nonprofit focused on food, something I regularly say to funders is “In an agricultural state like Kentucky, no one should be hungry.” And it is true, right? Yet, far too often areas of agricultural prosperity overlap with areas of high food insecurity. The two are by no means always related. I created this map to highlight the opportunity for cases when they are overlapping. 
+            <div>
+                <p>
+            If we change the ways we address food insecurity, we can build better food systems for everyone. First, we need to change our goal from providing food security to nutritional security where people are getting the nutrients they need, not a temporary full belly feeling created by over processed carbs on repeat. Nutritional security means making fresh food available. The best place to look for fresh food? Local farms! 
+        </div>
+    </p>
+            We can improve nutritional access while uplifting the local economy by purchasing local food. (And, let’s not forget that it is not uncommon for farmers to experience food insecurity as well depending on what there crops are.)  We can create local organizations that are grounded in the immediate community and are able to alleviate hunger, help local farms, offer better health benefits, and are more sustainable by increasing access to fresh produce grown nearby. They need the purchasing power to do so. In buying local, there is no dicotomy of helper and the helped, it is a symbiotic relationship of helping each other. 
+        </div>
+    </p>
+            At FoodChain, we have found buying local seconds and surplus to be more affordable and to help farmers profit from crops that often would have no market to enter. The crops are just as tasty, they just don’t look like what people expect in grocery stores. 
+        </div>
+    </p>
+            Finding places where local food could alleviate local need is just one of the pieces to a puzzle that also involves preserving infrastructure and food or cooking education among other pieces. This map is to draw attention to places where meeting local need with local food could be especially game-changing. However, further research on specific locations to ensure it would be an appropriate solution that can flourish. Local food is not a one-size-fits-all solution. But it sure does have a lot of potential. 
+        </div>
+        </p>
+          <div>
+          </p>
+
+          </p>
+          </div>
+ 
+       
+ 
+
+
+      </div>
+    </div>
+
+
+    <h3>Map details</h3>
+    <p>CRS: ESPG
+        <div>
+        SNAP Data From: 
+    </div>
+        Farm Data From:
+    <div>
+        Caveats: using SNAP as the criteria to establish food insecurity is going to be an undercount. 
+        The "crops" land cover is defined by ESRI as: "Human planted/plotted cereals, grasses, and crops not at tree height; examples: corn, wheat, soy, fallow plots of structured land." 
+        Does not include food sources like orchards, but would include things like soy that alone are not sustaining or relevant to the 
+        kind of fresh produce purchasing discussed. This is why additional research into an area is needed and the map is just a starting point.
+    </div>
+        QGIS 3.22 on MacOS 11.6
+        More Data: Canada shapefile from Statistics Canada which is hosted by the Canadian Government
+    </p>
+
+    <p>
+      University of Kentucky New Maps Plus, December 2021.
+    </p>
+    <hr>
+    <ul>
+			<li>See my projects on GitHub: <a href="https://github.com/rfe-binx">rfe-binx</a></li>
+			<li>Follow me on Twitter: <a href="https://twitter.com/rfe_binx">@rfe_binx</a></li>
+			<li>Learn about my day job: <a href='https://online.fliphtml5.com/nvnhm/uxsg/#p=36'>FoodChain: Nourish Lexington Scrapbook</a></li>
+    </ul>
+  </section>
+
+</body>
+</html>
+
