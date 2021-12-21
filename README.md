@@ -11,6 +11,6 @@ I used tiles: 15T-19T, 15S-18S, and 15R-17R to cover the eastern US.
 
 
 
-NHGIS IPUMS [(About)](hhttps://www.nhgis.org)
+NHGIS IPUMS [(About)](https://www.nhgis.org)
 
 I downloaded the county data for Public Assistance from American Community Survey 2019, reflecting data 2015-2019. I used both Households Receiving Public Asssistance and Households Receiving Public Assistance OR Food Stamps. I subtracted the former from the latter to isolate SNAP beneficiary households. Shapefiles also from this source. 
