@@ -13,7 +13,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: #d3d3d3;
+      background: #bbcab7;
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       color: #3d3d3d;
@@ -35,8 +35,8 @@
 
     h2 {
       font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      color: gray;
+      font-weight: 300;
+      color: rgb(73, 72, 72);
       font-size: 1.25em;
       letter-spacing: .04em;
     }
@@ -86,26 +86,24 @@
       padding-top: 20px;
     }
 
-    /* Use float property to make two-column layout. */
-
     .first-column {
-      float: left;
-      width: 48%;
-      padding-right: 20px;
-    }
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
 
-    .column {
-      float: left;
-      width: 48%;
-    }
+        .column {
+            float: left;
+            width: 48%;
+        }
 
-    /* Clear floats after the columns */
+        /* Clear floats after the columns */
 
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
     /* When browser is 800px wide or less */
 
@@ -130,21 +128,23 @@
     <h2>By Robin Emmons</h2>
 
     <div class="row">
+      <div class="first-column"
       
       <!-- First column, the left half -->
       <div >
-        <p>As the communications manager at a local nonprofit focused on food, something I regularly say to funders is “In an agricultural state like Kentucky, no one should be hungry.” And it is true, right? Yet, far too often areas of agricultural prosperity overlap with areas of high food insecurity. The two are by no means always related. I created this map to highlight the opportunity for cases when they are overlapping. 
-            <div>
+        <p>
+          Something I regularly say to potential funders visiting the local food nonprofit I work for is, “In an agricultural state like Kentucky, no one should be hungry.” And it is true, right? Yet, far too often areas of agricultural prosperity overlap with areas of high food insecurity.  I created this map to highlight the opportunity for cases in which this juxtaposition exists. 
+            
                 <p>
-            If we change the ways we address food insecurity, we can build better food systems for everyone. First, we need to change our goal from providing food security to nutritional security where people are getting the nutrients they need, not a temporary full belly feeling created by over processed carbs on repeat. Nutritional security means making fresh food available. The best place to look for fresh food? Local farms! 
-        </div>
-    </p>
-            We can improve nutritional access while uplifting the local economy by purchasing local food. (And, let’s not forget that it is not uncommon for farmers to experience food insecurity as well depending on what there crops are.)  We can create local organizations that are grounded in the immediate community and are able to alleviate hunger, help local farms, offer better health benefits, and are more sustainable by increasing access to fresh produce grown nearby. They need the purchasing power to do so. In buying local, there is no dicotomy of helper and the helped, it is a symbiotic relationship of helping each other. 
-        </div>
-    </p>
-            At FoodChain, we have found buying local seconds and surplus to be more affordable and to help farmers profit from crops that often would have no market to enter. The crops are just as tasty, they just don’t look like what people expect in grocery stores. 
-        </div>
-    </p>
+           If we change the ways we address food insecurity, we can build better food systems for everyone. We need to change our goal from providing food security to nutritional security where people are getting the nutrients they need, not just access to the cheapest, most overprocessed ingredients available. Nutritional security means making fresh food accessible. The best place to look for fresh food? Local farms! 
+        
+                <p>
+                  We can improve nutritional access while uplifting the local economy by purchasing local food or creating farms to combat nutritional security. (And, let’s not forget that it is not uncommon for farmers to experience food insecurity as well depending on what their crops are.)  We can create local organizations that are grounded in the immediate community and are able to alleviate hunger, help local farms, offer better health benefits, and are more sustainable by increasing access to fresh produce grown nearby. They need the purchasing power to do so. In buying local, there is no dichotomy of helper and the helped, it is a symbiotic relationship of helping each other. 
+              
+        <p>
+          At FoodChain, we have found buying local seconds and surplus to be more affordable and to help farmers profit from crops that often would have no market to enter. The crops are just as tasty, they just don’t look like what people expect in grocery stores. Another model is large scale community gardens where living wage employment opportunities are created. In this model, both the wages and the crops reduce food insecurity. There are many, many more options to consider, but just a couple to spark your imagination.
+        
+    <p>
             Finding places where local food could alleviate local need is just one of the pieces to a puzzle that also involves preserving infrastructure and food or cooking education among other pieces. This map is to draw attention to places where meeting local need with local food could be especially game-changing. However, further research on specific locations to ensure it would be an appropriate solution that can flourish. Local food is not a one-size-fits-all solution. But it sure does have a lot of potential. 
         </div>
         </p>
@@ -155,38 +155,46 @@
           </div>
  
        
- 
-
-
+        </div>
+        <div class="column">
+            <img class="max-image-width" src="graphics/NourishLexingtonBox.jpg"
+                title="FoodChain Nourish Lexington Meal Kit with Local Foods">
+            <div class="linkbox">Nourish Lexington meal kit with local foods and the ingredients to complete the meal. Made by <a href="https://www.foodchainlex.org">FoodChain.</a> Image by Robin Emmons</div>
+        <img class="max-image-width" src="graphics/SeedleafFarm.jpg"
+            title="Seedleaf Farm in Lexington, KY.">
+        <div class="linkbox">Farm run by <a href="https://www.seedleaf.org">Seedleaf,</a> Lexington KY, Photo by Robin Emmons</div>
       </div>
     </div>
 
 
-    <h3>Map details</h3>
-    <p>CRS: ESPG 102003 Albers Equal Area Conic
-        <div>
-        SNAP Data From: <a href="https://www.nhgis.org">NHGIS IPUMS</a> (SNAP Or Public Assistance by Households Data)
-    </div>
-        Farm Data From: <a href="https://www.arcgis.com/home/item.html?id=fc92d38533d440078f17678ebc20e8e2">ESRI Land Cover</a>(Crops)
+    <h3>About The Map</h3>
+    <p>
+      The bottom layer of the map shows the percentage of households receiving SNAP benefits in each county in the Eastern United States as an indicator of food insecurity. The next layer of the map shows areas ESRI classifies as growing crops. 
+      <li>CRS: ESPG 102003 Albers Equal Area Conic</li>
+       <li> SNAP Data From: <a href="https://www.nhgis.org">NHGIS IPUMS</a> (SNAP Or Public Assistance by Households Data)</li>
+        <li>Farm Data From: <a href="https://www.arcgis.com/home/item.html?id=fc92d38533d440078f17678ebc20e8e2">ESRI Land Cover</a> (Crops)</li>
     <div>
-        Caveats: using SNAP as the criteria to establish food insecurity is going to be an undercount. 
+    <li> Data Caveats: using SNAP as the criteria to establish food insecurity is going to be an undercount. 
         The "crops" land cover is defined by ESRI as: "Human planted/plotted cereals, grasses, and crops not at tree height; examples: corn, wheat, soy, fallow plots of structured land." 
         Does not include food sources like orchards, but would include things like soy that alone are not sustaining or relevant to the 
-        kind of fresh produce purchasing discussed. This is why additional research into an area is needed and the map is just a starting point.
+        kind of fresh produce purchasing discussed. This is why additional research into an area is needed and the map is just a starting point.</li>
     </div>
-        QGIS 3.22 on MacOS 11.6
-        More Data: Canada shapefile from Statistics Canada which is hosted by the Canadian Government
+  <li>QGIS 3.22 on MacOS 11.6</li>
+<li>More Data: Canada shapefile from Statistics Canada which is hosted by the Canadian Government</li>
     </p>
 
     <p>
-      University of Kentucky New Maps Plus, December 2021.
+
     </p>
-    <hr>
-    <ul>
+    
+      <br>
+<h3>About The Author</h3>
+  Robin Emmons for University of Kentucky New Maps Plus class MAP671, December 2021.
 			<li>See my projects on GitHub: <a href="https://github.com/rfe-binx">rfe-binx</a></li>
 			<li>Follow me on Twitter: <a href="https://twitter.com/rfe_binx">@rfe_binx</a></li>
-			<li>Learn about my day job: <a href='https://online.fliphtml5.com/nvnhm/uxsg/#p=36'>FoodChain: Nourish Lexington Scrapbook</a></li>
+			<li>Learn more about FoodChain's work: <a href='https://online.fliphtml5.com/nvnhm/uxsg/#p=36'>FoodChain: Nourish Lexington Scrapbook</a></li>
     </ul>
+    <br>
   </section>
 
 </body>
